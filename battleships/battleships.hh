@@ -103,8 +103,8 @@ public:
 
     void parseBoardState(const std::string&);
     std::string nextAction();
-
     void print() const;
+    void reset() { mState = State::InitBoats; mBoard = Board(); }
 
 private:
     Board initBoats();
